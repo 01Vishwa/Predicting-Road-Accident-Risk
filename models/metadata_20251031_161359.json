@@ -1,0 +1,53 @@
+{
+  "timestamp": "20251031_161359",
+  "cv_rmse": 0.05601413646406796,
+  "params": {
+    "n_estimators": 2217,
+    "max_depth": 11,
+    "learning_rate": 0.045238118744298804,
+    "subsample": 0.7384590439930039,
+    "gamma": 0.01440523822277898,
+    "colsample_bytree": 0.8165153235195506,
+    "min_child_weight": 5,
+    "reg_alpha": 0.08351735648195949,
+    "reg_lambda": 0.0183512761721743,
+    "objective": "reg:squarederror",
+    "eval_metric": "rmse",
+    "tree_method": "hist",
+    "verbosity": 0,
+    "random_state": 42
+  },
+  "categorical_columns": [
+    "road_type",
+    "lighting",
+    "weather",
+    "time_of_day"
+  ],
+  "boolean_columns": [
+    "road_signs_present",
+    "public_road",
+    "holiday",
+    "school_season"
+  ],
+  "numerical_columns": [
+    "num_lanes",
+    "curvature",
+    "speed_limit",
+    "num_reported_accidents"
+  ],
+  "engineered_columns": [
+    "speed_x_curvature",
+    "danger_score",
+    "road_complexity",
+    "accidents_per_lane",
+    "accidents_log",
+    "curvature_squared",
+    "speed_per_lane",
+    "accident_density"
+  ],
+  "target_column": "accident_risk",
+  "pipeline_path": "models\\pipeline_xgb_20251031_161359.pkl",
+  "booster_path": "models\\xgb_booster_20251031_161359.json",
+  "encoder_path": "models\\target_encoder_20251031_161359.joblib",
+  "random_state": 42
+}
